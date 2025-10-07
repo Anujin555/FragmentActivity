@@ -18,9 +18,10 @@ class ColorFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_color, container, false).apply {
             setOnClickListener {
+               setBackgroundColor(
                 arrayOf("red", "blue", "green", "yellow", "purple").random().toColorInt()
+               )
             }
-
         }
     }
 
